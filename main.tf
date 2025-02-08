@@ -12,7 +12,7 @@ resource "aws_db_instance" "mydb" {
   instance_class       = "db.t3.micro"  # Free tier eligible instance
   db_name              = "mydatabase"  # Database name
   username             = "admin"  # Master username
-  password             = "yourpassword123"  # Set a strong password here
+  password             = "yourpassword123"
   backup_retention_period = 7 # 7 days of backups
   multi_az             = false  # No multi-AZ for free tier
   publicly_accessible  = true  # Make it publicly accessible for testing (be careful!)
